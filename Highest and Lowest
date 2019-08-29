@@ -3,8 +3,7 @@ you are given a string of space separated numbers, and have to return the highes
 '''
 
 def high_and_low(numbers):
-    num = numbers.split(' ') ; [int(i) for i in num] ; num.sort()
-    num = [int(i) for i in num]
+    num = [int(i) for i in numbers.split(' ')]
     num.sort()
     high = num[-1]
     low = num[0]
